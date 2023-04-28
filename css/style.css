@@ -1,0 +1,224 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+main{
+     background-image: url("../images/slide-02.jpg");
+     height: 100vh;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+main header nav , nav ul {
+     display: flex;
+}
+main header nav a {
+     padding: 1.4%;
+}
+main header nav ul:first-of-type li:first-child a{
+     color: blue;
+}
+main header nav a:hover{
+     color: blue;
+}
+main nav ul:first-of-type{
+     justify-content: space-between;
+     flex-basis: 35%;
+     margin-right: 20%;
+     padding: 0;
+}
+main nav ul:last-of-type{
+     justify-content: space-around;
+     flex-basis: 20%;
+}
+main nav {
+     justify-content: space-between;
+}
+main nav ul li {
+     list-style: none;
+}
+main nav ul li a {
+     color: black;
+     text-decoration: none;
+}
+main div {
+     padding: 10% 30%;
+}
+
+.banner {
+     display: flex;
+     justify-content: space-around;
+}
+.banner section{
+     width: 25%;
+     height: 191px;
+     border: 1px solid rgb(222, 214, 214);
+}
+main article{
+     margin: 5%;
+     width: 30%;
+     font-size: 2em;
+}
+main article a{
+     text-decoration: none;
+     background: rgb(113,127,224);
+     color: white;
+     border-radius: 100px 100px;
+     width: 50%;
+     display: block;
+     text-align: center;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.banner section:first-child{
+     background-image: url("../images/banner-01.jpg");
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+
+}
+.banner section:nth-child(2){
+     background-image: url("../images/banner-02.jpg");
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+}
+.banner section:last-child{
+     background-image: url("../images/banner-03.jpg");
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+}
+.banner section {
+     margin: 5% 0;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.products >section{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin: 5% 8%;
+     gap: 1%;
+}
+.products >section section{
+     flex-basis: 20%;
+     height: 350px;
+     margin-bottom: 2%;
+     position: relative;
+}
+.products >section section img{
+     max-width: 100%;
+     transition: transform 0.3s;
+}
+.products >section section img:hover{
+     transform: scale(1.1);
+}
+.products >section section a{
+     position: absolute;
+     top: 60%;
+     left: 30%;
+     background: white;
+     border: none;
+     border-radius: 30%;
+     padding: 2% 4%;
+     text-decoration: none;
+     color: black;
+     display: none;
+}
+.products >section section a:hover{
+     color: white;
+     background: rgb(34, 34, 34);
+}
+.products > a{
+     background: rgba(223, 222, 227, 255);
+     text-decoration: none;
+     color: black;
+     margin: 0 45%;
+     padding: 1%;
+     border-radius: 25px;
+}
+.products > a:hover{
+     color: white;
+     background: black;
+}
+.products nav ,.products nav ul,.products nav div{
+     display: flex;
+}
+.products nav {
+     justify-content: space-between;
+     margin: 0 8%;
+}
+.products nav ul {
+     flex-basis: 50%;
+     justify-content: space-between;
+     padding: 0;
+}
+.products nav ul li{
+     list-style: none;
+}
+.products nav ul a{
+     text-decoration: none;
+     color: black;
+}
+.products nav ul li:first-of-type a{
+     border-bottom: 1px solid black;
+
+}
+.products nav ul a:hover{
+     border-bottom: 1px solid black;
+}
+.products h2{
+     margin-left: 8%;
+}
+.products nav div a{
+     margin: 16px 0;
+     border: 1px solid black;
+     color: black;
+     text-decoration: none;
+     padding: 4%;
+}
+.products nav div{
+     flex-basis: 15%;
+     justify-content: space-between;
+}
+footer{
+     margin-top: 5%;
+     height: 60vh;
+     background: rgb(34,34,34);
+     color: white;
+}
+footer ul{
+     margin: 0 5%;
+     display: flex;
+     justify-content: space-around;
+     height: 20%;
+     align-items: center;
+}
+footer ul a{
+     text-decoration: none;
+}
+footer ul li{
+     list-style: none;
+}

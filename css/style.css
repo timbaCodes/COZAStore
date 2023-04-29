@@ -208,17 +208,47 @@ footer{
      height: 60vh;
      background: rgb(34,34,34);
      color: white;
+     padding-top: 8%;
 }
 footer ul{
      margin: 0 5%;
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      height: 20%;
      align-items: center;
+     padding: 0;
+     gap: 10%;
 }
 footer ul a{
      text-decoration: none;
 }
 footer ul li{
      list-style: none;
+     text-align: center;
+}
+footer ul li ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 150px;
+     margin: 0;
+     padding-top: 25%;
+     gap: 5%;
+     text-align: right;
+}
+footer ul li:nth-child(3) ul{
+     padding: 0;
+     padding-top: 6%;
+}
+footer  a{
+     color: white;
+     background: rgb(113,127,224);
+     padding: 8%;
+     border-radius: 50px;
+}
+footer input{
+     background: none;
+     border: none;
+     border-bottom: 1px solid gray;
+     /* border-bottom-height: 50px; */
 }

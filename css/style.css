@@ -72,6 +72,19 @@ main div {
      width: 25%;
      height: 191px;
      border: 1px solid rgb(222, 214, 214);
+     position: relative;
+     margin: 5% 0;
+}
+.banner section:hover::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(93, 93, 252);
+     opacity: 0.5;
+     z-index: 1;
 }
 main article{
      margin: 5%;
@@ -109,8 +122,13 @@ main article a{
      background-position: center center;
      background-repeat: no-repeat;
 }
-.banner section {
-     margin: 5% 0;
+.shopnow {
+     display: none;
+     position: absolute;
+     top: 70%;
+}
+.banner section:hover span {
+     display: block;
 }
 /******************************************
 /* ADDITIONAL STYLES
@@ -209,6 +227,7 @@ footer{
      background: rgb(34,34,34);
      color: white;
      padding-top: 8%;
+     position: relative;
 }
 footer ul{
      margin: 0 5%;
@@ -224,7 +243,7 @@ footer ul a{
 }
 footer ul li{
      list-style: none;
-     text-align: center;
+     /* text-align: center; */
 }
 footer ul li ul {
      display: flex;
@@ -234,13 +253,13 @@ footer ul li ul {
      margin: 0;
      padding-top: 25%;
      gap: 5%;
-     text-align: right;
+     /* text-align: right; */
 }
 footer ul li:nth-child(3) ul{
      padding: 0;
      padding-top: 6%;
 }
-footer  a{
+.btn{
      color: white;
      background: rgb(113,127,224);
      padding: 8%;
@@ -252,3 +271,30 @@ footer input{
      border-bottom: 1px solid gray;
      /* border-bottom-height: 50px; */
 }
+footer a{
+     color: gray;
+}
+footer >ul >li >a{
+     color: white;
+}
+.icons{
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+.icon{
+     flex-basis: 75%;
+     padding-right: 70%;
+}
+.touch{
+     width: 25%;
+}
+footer >span{
+     position: absolute;
+     top: 80%;
+     left: 25%;
+     color: gray;
+}
+.owner{
+     color: blue;
+}
+

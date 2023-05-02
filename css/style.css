@@ -1,300 +1,360 @@
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-main{
-     background-image: url("../images/slide-02.jpg");
-     height: 100vh;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center center;
+main {
+  background-image: url("../images/slide-02.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-main header nav , nav ul {
-     display: flex;
+main header nav,
+nav ul {
+  display: flex;
 }
 main header nav a {
-     padding: 1.4%;
+  padding: 1.4%;
 }
-main header nav ul:first-of-type li:first-child a{
-     color: blue;
+main header nav ul:first-of-type li:first-child a {
+  color: blue;
 }
-main header nav a:hover{
-     color: blue;
+main header nav a:hover {
+  color: blue;
 }
-main nav ul:first-of-type{
-     justify-content: space-between;
-     flex-basis: 35%;
-     margin-right: 20%;
-     padding: 0;
+main nav ul:first-of-type {
+  justify-content: space-between;
+  flex-basis: 35%;
+  margin-right: 20%;
+  padding: 0;
 }
-main nav ul:last-of-type{
-     justify-content: space-around;
-     flex-basis: 20%;
+main nav ul:last-of-type {
+  justify-content: space-around;
+  flex-basis: 20%;
 }
 main nav {
-     justify-content: space-between;
+  justify-content: space-between;
 }
 main nav ul li {
-     list-style: none;
+  list-style: none;
 }
 main nav ul li a {
-     color: black;
-     text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 main div {
-     padding: 10% 30%;
+  padding: 10% 30%;
 }
 
 .banner {
-     display: flex;
-     justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-.banner section{
-     width: 25%;
-     height: 191px;
-     border: 1px solid rgb(222, 214, 214);
-     position: relative;
-     margin: 5% 0;
+.banner section {
+  width: 25%;
+  height: 191px;
+  border: 1px solid rgb(222, 214, 214);
+  position: relative;
+  margin: 5% 0;
 }
-.banner section:hover::before{
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgb(93, 93, 252);
-     opacity: 0.5;
-     z-index: 1;
+.banner section:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(93, 93, 252);
+  opacity: 0.5;
+  z-index: 1;
 }
-main article{
-     margin: 5%;
-     width: 30%;
-     font-size: 2em;
+main article {
+  margin: 5%;
+  width: 30%;
+  font-size: 2em;
 }
-main article a{
-     text-decoration: none;
-     background: rgb(113,127,224);
-     color: white;
-     border-radius: 100px 100px;
-     width: 50%;
-     display: block;
-     text-align: center;
+main article a {
+  text-decoration: none;
+  background: rgb(113, 127, 224);
+  color: white;
+  border-radius: 100px 100px;
+  width: 50%;
+  display: block;
+  text-align: center;
 }
 /******************************************
 /* LAYOUT
 /*******************************************/
-.banner section:first-child{
-     background-image: url("../images/banner-01.jpg");
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-
+.banner section:first-child {
+  background-image: url("../images/banner-01.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.banner section:nth-child(2){
-     background-image: url("../images/banner-02.jpg");
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
+.banner section:nth-child(2) {
+  background-image: url("../images/banner-02.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.banner section:last-child{
-     background-image: url("../images/banner-03.jpg");
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
+.banner section:last-child {
+  background-image: url("../images/banner-03.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .shopnow {
-     display: none;
-     position: absolute;
-     top: 70%;
+  display: none;
+  position: absolute;
+  top: 70%;
 }
 .banner section:hover span {
-     display: block;
+  display: block;
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-.products >section{
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     margin: 5% 8%;
-     gap: 1%;
+.products > section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5% 8%;
+  gap: 1%;
 }
-.products >section section{
-     flex-basis: 20%;
-     height: 350px;
-     margin-bottom: 2%;
-     position: relative;
+.products > section section {
+  flex-basis: 20%;
+  height: 350px;
+  margin-bottom: 2%;
+  position: relative;
 }
-.products >section section img{
-     max-width: 100%;
-     transition: transform 0.3s;
+.products > section section img {
+  max-width: 100%;
+  transition: transform 0.3s;
 }
-.products >section section img:hover{
-     transform: scale(1.1);
+.products > section section img:hover {
+  transform: scale(1.1);
 }
-.products >section section a{
-     position: absolute;
-     top: 60%;
-     left: 30%;
-     background: white;
-     border: none;
-     border-radius: 30%;
-     padding: 2% 4%;
-     text-decoration: none;
-     color: black;
-     display: none;
+.products > section section a {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  background: white;
+  border: none;
+  border-radius: 30%;
+  padding: 2% 4%;
+  text-decoration: none;
+  color: black;
+  display: none;
 }
-.products >section section a:hover{
-     color: white;
-     background: rgb(34, 34, 34);
+.products > section section a:hover {
+  color: white;
+  background: rgb(34, 34, 34);
 }
-.products > a{
-     background: rgba(223, 222, 227, 255);
-     text-decoration: none;
-     color: black;
-     margin: 0 45%;
-     padding: 1%;
-     border-radius: 25px;
+.products > a {
+  background: rgba(223, 222, 227, 255);
+  text-decoration: none;
+  color: black;
+  margin: 0 45%;
+  padding: 1%;
+  border-radius: 25px;
 }
-.products > a:hover{
-     color: white;
-     background: black;
+.products > a:hover {
+  color: white;
+  background: black;
 }
-.products nav ,.products nav ul,.products nav div{
-     display: flex;
+.products nav,
+.products nav ul,
+.products nav div {
+  display: flex;
 }
 .products nav {
-     justify-content: space-between;
-     margin: 0 8%;
+  justify-content: space-between;
+  margin: 0 8%;
 }
 .products nav ul {
-     flex-basis: 50%;
-     justify-content: space-between;
-     padding: 0;
+  flex-basis: 50%;
+  justify-content: space-between;
+  padding: 0;
 }
-.products nav ul li{
-     list-style: none;
+.products nav ul li {
+  list-style: none;
 }
-.products nav ul a{
-     text-decoration: none;
-     color: black;
+.products nav ul a {
+  text-decoration: none;
+  color: black;
 }
-.products nav ul li:first-of-type a{
-     border-bottom: 1px solid black;
-
+.products nav ul li:first-of-type a {
+  border-bottom: 1px solid black;
 }
-.products nav ul a:hover{
-     border-bottom: 1px solid black;
+.products nav ul a:hover {
+  border-bottom: 1px solid black;
 }
-.products h2{
-     margin-left: 8%;
+.products h2 {
+  margin-left: 8%;
 }
-.products nav div a{
-     margin: 16px 0;
-     border: 1px solid black;
-     color: black;
-     text-decoration: none;
-     padding: 4%;
+.products nav div a {
+  margin: 16px 0;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  padding: 4%;
 }
-.products nav div{
-     flex-basis: 15%;
-     justify-content: space-between;
+.products nav div {
+  flex-basis: 15%;
+  justify-content: space-between;
 }
-footer{
-     margin-top: 5%;
-     height: 60vh;
-     background: rgb(34,34,34);
-     color: white;
-     padding-top: 8%;
-     position: relative;
+footer {
+  margin-top: 5%;
+  height: 60vh;
+  background: rgb(34, 34, 34);
+  color: white;
+  padding-top: 8%;
+  position: relative;
 }
-footer ul{
-     margin: 0 5%;
-     display: flex;
-     justify-content: space-between;
-     height: 20%;
-     align-items: center;
-     padding: 0;
-     gap: 10%;
+footer ul {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+  padding: 0;
+  gap: 10%;
 }
-footer ul a{
-     text-decoration: none;
+footer ul a {
+  text-decoration: none;
 }
-footer ul li{
-     list-style: none;
-     /* text-align: center; */
+footer ul li {
+  list-style: none;
+  /* text-align: center; */
 }
 footer ul li ul {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     height: 150px;
-     margin: 0;
-     padding-top: 25%;
-     gap: 5%;
-     /* text-align: right; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  margin: 0;
+  padding-top: 25%;
+  gap: 5%;
+  /* text-align: right; */
 }
-footer ul li:nth-child(3) ul{
-     padding: 0;
-     padding-top: 6%;
+footer ul li:nth-child(3) ul {
+  padding: 0;
+  padding-top: 6%;
 }
-.btn{
-     color: white;
-     background: rgb(113,127,224);
-     padding: 8%;
-     border-radius: 50px;
+.btn {
+  color: white;
+  background: rgb(113, 127, 224);
+  padding: 8%;
+  border-radius: 50px;
 }
-footer input{
-     background: none;
-     border: none;
-     border-bottom: 1px solid gray;
-     /* border-bottom-height: 50px; */
+footer input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  /* border-bottom-height: 50px; */
 }
-footer a{
-     color: gray;
+footer a {
+  color: gray;
 }
-footer >ul >li >a{
-     color: white;
+footer > ul > li > a {
+  color: white;
 }
-.icons{
-     flex-direction: row;
-     flex-wrap: wrap;
+.icons {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.icon{
-     flex-basis: 75%;
-     padding-right: 70%;
+.icon {
+  flex-basis: 75%;
+  padding-right: 70%;
 }
-.touch{
-     width: 25%;
+.touch {
+  width: 25%;
 }
-footer >span{
-     position: absolute;
-     top: 80%;
-     left: 25%;
-     color: gray;
+footer > span {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  color: gray;
 }
-.owner{
-     color: blue;
+.owner {
+  color: blue;
 }
+@media all and (max-width: 500px) {
+  .banner {
+    flex-wrap: wrap;
+  }
+  .banner section {
+    flex-basis: 100%;
+    margin: 5% 12%;
+  }
+}
+@media all and (max-width: 500px) {
+  .products > section {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .products > section section {
+    flex-basis: 100%;
+  }
+  .products > a{
+  margin: 0 39%;
+  }
+  footer{
+     margin-top: 10%;
+     padding-top: 7%;
+     height: 156vh;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+  footer ul li {
+    flex-basis: 100%;
 
+  }
+  .categul ,.helpul,.newsletter{
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: initial;
+     margin-top: 7%;
+  }
+  .categul li , .helpul li{
+     flex-basis: 0;
+  }
+  footer >span{
+     left: 5%;
+     top:95%
+  }
+  footer ul li ul {
+     padding-top: 4%;
+  }
+  .newsletter li{
+     flex-basis: 0;
+  }
+  .newsletter a{
+     padding: 4%;
+  }
+  main header nav ul {
+     display: none;
+  }
+}
